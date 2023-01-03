@@ -30,7 +30,7 @@ let storage = multer.diskStorage({
   },
 });
 
-function fileFilter(req, file, cb) {
+const fileTypeFilter = (req, file, cb) => {
   // The function should call `cb` with a boolean
   // to indicate if the file should be accepted
 
@@ -51,7 +51,7 @@ function fileFilter(req, file, cb) {
 // static functions
 fileSchema.statics.uploadedFile = multer({
   storage: storage,
-  fileFilter: fileFilter,
+  fileFilter: fileTypeFilter,
 }).single("file");
 
 fileSchema.statics.filePath = FILE_PATH;
