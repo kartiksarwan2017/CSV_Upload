@@ -99,3 +99,25 @@ The results will be displayed in the form of rows of tables.</p>
 - Integrated Development Environment: VSCode
 
 
+## Screens
+
+<p align="justify">
+   
+### Home Page:    
+<img src="/screenshots/Home_Page.PNG">
+
+### Upload CSV File:
+<img src="/screenshots/Upload_CSV_FILE.PNG">
+
+### CSV File Details:
+<img src="/screenshots/CSV_File_details.PNG">
+
+### Search In Table Headers:
+<img src="/screenshots/Search_in_column.PNG">
+
+### Sorting in Desc/Asc Order:
+<img src="/screenshots/Apply_Sort_on_headers.PNG">
+
+
+</p>
+<br/>
