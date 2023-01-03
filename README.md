@@ -104,19 +104,19 @@ The results will be displayed in the form of rows of tables.</p>
 <p align="justify">
    
 ### Home Page:    
-<img src="/screenshots/Home_Page.PNG">
+<img src="/screenshots/Home_Page.png" alt="home-page-screen">
 
 ### Upload CSV File:
-<img src="/screenshots/Upload_CSV_FILE.PNG">
+<img src="/screenshots/Upload_CSV_FILE.png" alt="upload-csvFile-screen">
 
 ### CSV File Details:
-<img src="/screenshots/CSV_File_details.PNG">
+<img src="/screenshots/CSV_File_details.png" alt="csv-file-details-screen">
 
 ### Search In Table Headers:
-<img src="/screenshots/Search_in_column.PNG">
+<img src="/screenshots/Search_in_column.png" alt="search-in-column-screen">
 
 ### Sorting in Desc/Asc Order:
-<img src="/screenshots/Apply_Sort_on_headers.PNG">
+<img src="/screenshots/Apply_Sort_on_headers.png" alt="apply-sorting-screen">
 
 
 </p>
