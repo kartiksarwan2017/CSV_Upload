@@ -29,6 +29,7 @@
     "gulp-rev": "^10.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
+    "mongodb": "^4.13.0",
     "mongoose": "^6.8.2",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
