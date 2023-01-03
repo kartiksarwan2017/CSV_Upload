@@ -35,4 +35,4 @@ const production = {
 }
 
 
-module.exports = eval(process.env.PLACEMENT_CELL_ENVIRONMENT) == undefined ? development : eval(process.env.PLACEMENT_CELL_ENVIRONMENT);
+module.exports = eval(process.env.CSV_UPLOAD_ENVIRONMENT) == undefined ? development : eval(process.env.CSV_UPLOAD_ENVIRONMENT);
