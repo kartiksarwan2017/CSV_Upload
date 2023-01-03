@@ -14,9 +14,6 @@ const flash = require('connect-flash');
 const customMiddleware = require('./config/middleware');
 const MongoStore = require('connect-mongo');
 
-// use express middleware
-app.use(express.json());
-
 // Setting up sass middleware
 if(env.name == 'development'){
 
@@ -31,6 +28,9 @@ if(env.name == 'development'){
   );
 
 }
+
+// use express middleware
+app.use(express.json());
 
 
 //to parse data
@@ -62,8 +62,6 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 
-
-
 // Setting up express session
 app.use(session({
   name: 'csv',
@@ -85,8 +83,15 @@ app.use(session({
 // Setting up flash
 app.use(flash());
 
+//Middleware - Creates Server Storage Folder & Sub Folders, if not exists
+app.use(customMiddleware.createServerStorage);
+//Middleware - Creates Uploads Folder & Sub Folders, if not exists
+app.use(customMiddleware.createUploads);
+
 // Setting up custom Middleware
 app.use(customMiddleware.setFlash);
+
+
 
 // use express router
 app.use("/", require("./routes"));
