@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 100vw;
+}
+
+body {
+  text-align: center;
+  // background: url('https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-733857.jpg&fm=jpg');
+  background-size: 1500px;
+  background-repeat: repeat-y;
+}
+
+
+

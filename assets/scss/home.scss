@@ -1,0 +1,79 @@
+body {
+
+ background: url('https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+ background-repeat: repeat-y;
+ background-size: 100% 200vh;
+ overflow-x: hidden;
+
+  .csv-upload-container {
+    position: absolute;
+    top: 200px;
+    left: 470px;
+
+    .file {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    #upload-btn {
+      font-size: 20px;
+      width: 90px;
+    }
+  }
+
+  $color_1: black;
+  $font-family_1: Arial, Helvetica, sans-serif;
+
+  #files {
+
+    text-align: center;
+    font-family: $font-family_1;
+    width: 100vw;
+    position: relative;
+    top: 200px;
+
+    #files-header {
+
+      font-weight: bold;
+      text-decoration: underline;
+      padding-top: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+
+      list-style-type: none;
+
+      .individual-file {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 700px;
+        margin-left: 23vw;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
+        background: linear-gradient(90deg, greenyellow, orange);
+
+        a {
+
+          text-decoration: none;
+          color: $color_1;
+          font-size: 20px;
+          color: blue;
+
+          .delete-btn{
+            color: red;
+          }
+
+          .redirect-btn{
+            color: blue;
+          }
+
+        }
+      }
+    }
+  }
+}

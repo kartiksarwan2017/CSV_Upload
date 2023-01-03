@@ -1,0 +1,65 @@
+<!-- Stylesheet -->
+<link rel="stylesheet" href="<%= assetPath('css/file.css') %>">
+
+
+<div class="file-details-container">
+
+    <!-- File Details Container Starts -->
+
+    <div id="search-box">
+            
+        <input type="text" name="search" id="search" placeholder="Search "/>
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+
+
+        <select name="option" id="opt"  class="form-select form-select-sm option" aria-label=".form-select-sm example">
+            <option value="Filter Column" disabled selected>Filter Column</option>
+            <% for(let i=0; i< headers.length; i++) { %>
+                <option value="<%= i %>"><%= headers[i] %></option>
+            <% } %> 
+        </select>
+    </div>
+
+
+    <table id="table" class="table table-striped table-bordered table-hover table-sortable">
+
+        <thead>
+            <tr class="table-primary">
+                <% for(let header of headers) { %>
+                    <th>
+                        <%= header %>
+                    </th>
+                    <% } %>
+            </tr>
+        </thead>
+
+        <tbody id="mytable">
+
+        <% for(let i=0; i < datas.length; i++){ %>
+            <tr>
+                <% for(let j=0; j < headers.length; j++){ %>
+                    <td>
+                        <%= datas[i][headers[j]] %>
+                    </td>
+
+                    <% } %>
+            </tr>
+            <% } %>
+
+        </tbody>    
+
+    </table>
+
+    <!--Page numbers for pagination-->
+    <div id="page-numbers"></div>
+
+    <!-- File Details Container Ends -->
+
+</div>
+
+<!-- Script Tag -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--JS File-->
+<script src="<%= assetPath('js/fileScript.js') %>"></script>
+
