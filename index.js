@@ -45,9 +45,6 @@ app.use(express.static(env.asset_path));
 // make the uploads path available to the browser
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-//Middleware - Make the 'server_storage' path available to the browser
-app.use("/server_storage", express.static(__dirname + "/server_storage"));
-
 app.use(logger(env.morgan.mode, env.morgan.options));
 
 app.use(expressLayouts);
@@ -83,8 +80,6 @@ app.use(session({
 // Setting up flash
 app.use(flash());
 
-//Middleware - Creates Server Storage Folder & Sub Folders, if not exists
-app.use(customMiddleware.createServerStorage);
 //Middleware - Creates Uploads Folder & Sub Folders, if not exists
 app.use(customMiddleware.createUploads);
 
